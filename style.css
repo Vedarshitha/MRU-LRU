@@ -1,0 +1,158 @@
+.container {
+    border: 2px solid rgb(0, 0, 0);
+    width: 90%;
+    max-width: 600px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.box {
+    width: calc(100% - 20px);
+    border: 2px solid rgb(173, 162, 162);
+    border-radius: 30px;
+    margin: 5px auto;
+    background-color: rgb(255, 208, 230);
+    font-size: 18px;
+}
+
+.p {
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(171, 193, 193);
+}
+
+.cache-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.cache-box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.mru {
+    background-color: green;
+    color: white;
+}
+
+.lru {
+    background-color: red;
+    color: white;
+}
+
+.input-container {
+    margin: 20px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input {
+    padding: 12px;
+    width: 90%;
+    max-width: 300px;
+    font-size: 18px;
+}
+
+.put {
+    width: 80px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.put1 {
+    width: 90%;
+    max-width: 150px;
+    padding: 13px;
+    font-size: 17px;
+}
+
+h1 {
+    color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    border: 2px solid black;
+    border-radius: 60px;
+    padding: 10px;
+    background-color: rgb(255, 0, 144);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .box {
+        font-size: 16px;
+    }
+
+    .cache-box {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .put,
+    .put1 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .box {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    input,
+    .put,
+    .put1 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
